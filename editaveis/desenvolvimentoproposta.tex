@@ -13,44 +13,74 @@ Para desenvolvimento da ferramenta prentende-se fazer uso do SCRUM com adaptaç�
 
 \section{Sistema}
 
-Para desenvolvimendo do sistema foram levantadas histórias de usuário e critérios de aceitação. As histórias de usuários formarão o backlog do produto e os critérios de aceitação definem se o que será feito estará de acordo com os requisitos levantados, como usabilidade é uma parte muito importante do sistema a ser desenvolvido os critérios de aceitação servirão principalmente para validar se o sistema foi construído com a usabilidade esperada. As histórias foram pontuadas de acordo com a sequência de Fibonacci e se a história ficasse com mais de 13 pontos era refatorada e divida em duas histórias menores. As histórias levantadas e as suas respectivas pontuações se encontram na tabela X. A história será considerada pronta 
+A ferramenta deve ser capaz de importar e exportar os modelos de projetos de gamificação. Apesar de ser uma ferramenta para construção de projetos de gamificações e não uma ferramenta gamificada a inserção de dados e o seu comportamento deve ser leve e fluído, de fácil uso  e interação por parte do usuário, para que não tenha os mesmos problemas encontrados na inserção de dados feitos através de planilhas excel e não desmotive o usuário logo no inicio do processo de construção do projeto de gamificação, seria contraditório construir uma ferramenta massante e arcaica dentro de um contexto de gamificação, seria iniciar todo o processo comentendo um erro. O usuário deve se sentir motivado desde o início do uso do sistema até o momento de conclusão do projeto e a usabilidade do sistema terá parte importanta nesse processo. A ferramenta deve ser capaz de permitir que o usuário vizualize o projeto como um todo.  A ferramenta irá dispor de modelos que servirão de base para a construção dos projetos, caso o usuário sinta necessidade, poderá usar um modelo de gamificação como exemplo. 
 
-\begin{tabular}{|c|l|}
 
-\hline
-\multicolumn{2}{|c}{\textbf{Histórias de Usuário}}\\ \hline
-Pontuação & Histórias \\ \hline
-1 & Eu, como usuário gostaria de realizar login no sistema, para que eu possa ter acesso aos meus projetos.\\ \hline
-2 & Eu, como usuário gostaria de mudar o status do projeto para público ou privado,  para ter privacidade quando necessário.\\ \hline
-3 & Eu, como usuário, gostaria de compartilhar o projeto, para que outras pessoas possam ter acesso ao mesmo.\\ \hline
-4 & Eu, como usuário, gostaria de finalizar o projeto em um dia diferente do iniciado, para que eu possa modificar o projeto ao longo da construção. \\ \hline
-5 & Eu, como usuário, gostaria de receber um feedback quando o projeto de gamificação não estiver sendo construído de maneira consistente, para que eu possa realizar as modificações necessárias.\\ \hline
-6 & Eu, como usuário, gostaria de construir mais de um projeto, para montar uma galeria de projetos.\\  \hline
-7 & Eu, como usuário, gostaria de reutilizar um projeto finalizado, para aplicar a outro contexto.\\ \hline
-8 & Eu, como usuário, gostaria de escolher a partir de qual elemento inicio o projeto, para ter maior flexibilidade de idéias.\\ \hline
-9 & Eu, como usuário, gostaria de vizualiar uma descrição dos itens que compõem o projeto, para entender o que cada item significa.\\ \hline
-10 & Eu, como usuário, gostaria de vizualizar um tutorial interativo, para entender como funciona a ferramenta.\\ \hline
-11 & Eu, como usuário, gostaria de saber qual tipo de gamifição construi, para entender quais os aspectos serão motivados .\\ \hline
-12 & Eu, como usuário, gostaria de apagar um projeto, para não ter mais acesso ao mesmo.\\ \hline
+
+\subsection{Requisitos e funcionalidades}
+Para desenvolvimendo do sistema foram levantadas histórias de usuário e critérios de aceitação. As histórias de usuários formarão o backlog do produto e os critérios de aceitação definem se o que será feito estará de acordo com os requisitos levantados, como usabilidade é uma parte muito importante do sistema a ser desenvolvido os critérios de aceitação servirão principalmente para validar se o sistema foi construído com a usabilidade esperada. As histórias levantadas e as suas respectivas pontuações se encontram na tabela (\ref{tab01}) . 
+
+
+
+\begin{table}[!htpb]
+\label{tab01}
+\centering
+\begin{tabular}{|p{1.5cm}|p{12cm}|} \hline
+
+ Número & História de usuário \\ \hline
+
+ 1 & Eu, como usuário gostaria de realizar login no sistema, para que eu possa ter acesso aos meus projetos. \\ \hline
+
+ 2 & Eu, como usuário gostaria de mudar o status do projeto para público ou privado,  para ter privacidade quando necessário. \\ \hline
+
+ 3 & Eu, como usuário gostaria de importar e exportar os projetos de gamificação, para fazer uso em outras plataformas. \\ \hline
+
+ 4 & Eu, como usuário, gostaria de finalizar o projeto em um dia diferente do iniciado, para que eu possa modificar o projeto ao longo da construção. \\ \hline
+
+ 5 & Eu, como usuário, gostaria de receber um feedback quando o projeto de gamificação não estiver sendo construído de maneira consistente, para que eu possa realizar as modificações necessárias. \\ \hline
+
+ 6 & Eu, como usuário, gostaria de construir mais de um projeto, para montar uma galeria de projetos. \\ \hline
+
+ 7 & Eu, como usuário, gostaria de reutilizar um projeto finalizado, para aplicar a outro contexto. \\ \hline
+
+ 8 & Eu, como usuário, gostaria de escolher a partir de qual elemento inicio o projeto, para ter maior flexibilidade de idéias. \\ \hline
+
+ 9 & Eu, como usuário, gostaria de vizualiar uma descrição dos itens que compõem o projeto, para entender o que cada item significa. \\ \hline
+
+ 10 & Eu, como usuário, gostaria de vizualizar um tutorial interativo, para entender como funciona a ferramenta. \\ \hline
+
+ 11 & Eu, como usuário, gostaria de saber qual tipo de gamifição construi, para entender quais os aspectos serão motivados . \\ \hline
+
+ 12 & Eu, como usuário, gostaria de apagar um projeto, para não ter mais acesso ao mesmo. \\ \hline
 \end{tabular}
-
-\subsection{Critérios de Aceitação}
-
-
-\subsection{Protótipos}
-
-Apesar de ser uma ferramenta para construção de projetos de gamificações e não uma ferramenta gamificada a inserçação de dados e o seu comportamento deve ser leve e fluído, de fácil uso  e interação por parte do usuário, para que não tenha os mesmos problemas encontrados na inserção de dados feitos através de planilhas excel e não desmotive o usuário logo no inicio do processo de construção do projeto de gamificação, seria contraditório construir uma ferramenta massante e arcaica dentro de um contexto de gamificação, seria iniciar todo o processo comentendo um erro. O usuário deve se sentir motivado desde o início do uso do sistema até o momento de conclusão do projeto e a usabilidade do sistema terá parte importanta nesse processo.
+\caption{Histórias de Usuário}
+\end{table} 
 
 
+\subsection{Lacunas da Proposta}
 
-	
+Quando algo novo é proposto ele está sujeito a falhas, as lacunas já identificadas na proposta estão listadas abaixo como perguntas.
+
+\begin{itemize}
+\item  A gamificação ultrapassa os limites dos aparelhos eletrônicos, não há necessidade real de nenhum aparato tecnologico para se criar uma gamificação, porque então a ferramenta será útil já que já existe material ensinando a criar gamificações?
+	A ferramenta servirá para encurtar o processo de aprendizado sobre gamificação antes de criar o projeto e irá facilitar a criação do mesmo, visto que irá automatizar o processo.
+\item  Como tornar a construção dos projetos divertidas?
+	Uma interface intuitiva e centrada no usuário, com elementos simples de utilizar e com uma temática conhecida pelo usuário.
+\item Como evitar ou reduzir o risco de fracasso ou ineficiência dos projetos de gamificação criados na ferramenta?
+	O relacionamento estabelecido entre as técnicas de gamificação tem como objetivo reduzir a taxa de fracassos.
+\item Como testar se o mapeamento e relacionamento das técnicas do não está sendo feito de maneira inadequada?
+\item O principal foco da ferramenta é fazer uma inserção de dados menos desgastante ou criar gamificação de qualidade?
+\item Até que ponto é possivel motivar os aspectos psicologicos intrisicamente ligados a gamificação através de uma ferramenta?
+
+\end{itemize}
+
 \subsection{Definição de tecnologias}
 
-Para a construção da base de conhecimento será utilizado o Attribute-Logic Engine (ALE), no ALE cada estrutura representa um tipo e os tipos são organizados em hierarquia, onde as características de um tipo são herdadas pelos subtipos, o ALE é um sistema de representação e análise léxica, é um compilador de gramáticas que utiliza Prolog. O ALE será utilizado para montar a ontologia por trás da ferramenta.
+Para a construção da base de conhecimento será utilizado o Attribute-Logic Engine (ALE), no ALE cada estrutura representa um tipo e os tipos são organizados em hierarquia, onde as características de um tipo são herdadas pelos subtipos, o ALE é um sistema de representação e análise léxica, é um compilador de gramáticas que utiliza Prolog. O ALE será utilizado para montar a ontologia por trás da ferramenta, fará o raciocínio fazendo uso dos atributos.
 A plataforma web será desenvolvida utilizando o paradigma orientado a objetos e arquitetura Model View Controller, em conjunto com o ALE, as linguagens cadidatas para o desenvolvimento da plataforma web são Ruby com o Framework Rails e Python, com o framework Django, juntamento com Angular JS, visto que a ferramenta precisa ser bastante dinâmica para o usuário. O versionamento do código será feita através do git, o banco de dados será o mysql e a ferramenta de análise de qualidade de código será definida juntamente com a definição da linguagem de desenvolvimento, para o gerenciamento das sprints será utilizada o waffle.io, onde ficará disposto o backlog do produto e o backlog da sprint, integrado ao repositório do git, onde as histórias serão divididas em tarefas e gerarão issues no github.
-\newpage
 
-\section{Cronograma de desenvolvimento}
+
+\section{Cronograma de desenvolvimento TCC1}
 
 
 \begin{table}[!htpb]
@@ -66,17 +96,17 @@ A plataforma web será desenvolvida utilizando o paradigma orientado a objetos e
 % \cline é semelhante ao \hline, porém é possível indicar as colunas que terão essa a linha horizontal
 % \multicolumn{10}{c|}{Meses} indica que dez colunas serão mescladas e a palavra Meses estará centralizada dentro delas.
 
-\begin{tabular}{|l|l|l|l|l|l|l|}\hline
+\begin{tabular}{|c|c|c|c|c|}\hline
  & \multicolumn{4}{c|}{Período}\\ \cline{2-5}
 \raisebox{1.5ex}{Etapa} & 15/02 à 22/02 & 01/03 a 31/03 & 04/04 à 22/05 & 16/05 à 15/06 \\ \hline
 
 Apontar Tema & X & & & \\ \hline
-Levantar Referencial Teórico &  & X & & \\ \hline
-Definir Metodologias & & X & & \\ \hline
+Levantar Referencial Teórico & & X & & \\ \hline
+Definir Metodologias & X & & & \\ \hline
 Pré Projeto & & & X & \\ \hline
-Mapeamento das Técnicas & & & X &\\ \hline
+Mapeamento das Técnicas & & & X &  \\ \hline
 Seleção dos atributos & & & X & \\ \hline
-Escrita do TCC & &  &  & X & & \\ \hline
+Escrita do TCC & & & & X \\ \hline
 
 \end{tabular} 
 \end{small}
