@@ -1,0 +1,185 @@
+
+\chapter[Engenharia de software]{ENGENHARIA DE SOFTWARE}
+
+Segundo \cite{sommerville2003engenharia} , a  engenharia de software é um ramo da engenharia cujo foco é o desenvolvimento dentro de custos adequados de sistemas de software. Ela está relacionada a todos os aspectos de produção de software, desde os estágio siniciais de especificação até sua manutenção, depois de entrar em operação. \cite{pressman2009engenharia} explica a engenharia como a aplicação de uma abordagem sistemática, disciplinada e quantificável no desenvolvimento, na operação e na manutenção de software.Este capítulo trata dos aspectos pertinentes a engenharia de software presente neste trabalho e está estruturado de acordo com as práticas da engenharia de software sugerida por \cite{pressman2009engenharia}, explicadas abaixo:
+
+\begin{itemize}
+\item  \textbf {Compreender o problema:} Definir interessados na solução do problema, dados, funções e recursos necessários, analisar se é possível representar o problema em problemas menores.
+\item  \textbf {Planejar Solução:} Procurar problemas similares, analisar se é possível representar a solução de maneira que produza uma implementação efetiva. 
+\item  \textbf {Executar Solução:} Analisar se a solução se adequa ao plano, verificar se cada uma das partes da solução está provavelmente correta, 
+\item  \textbf {Examinar Resultado:} Analisar se o software foi validado em relação a todas as solicitações do interessados e se a solução se adequa ao plano.
+\end{itemize}
+
+
+ Os processos de software são complexos e, como todos os processos intelectuais e criativos, dependem do julgamento humano \cite{sommerville2003engenharia}. Tendo essa complexidade em vista, para alinhar as práticas de engenharia de software com o desenvolvimento do trabalho foi realizada uma adaptação das  mesmas. O TCC1 e o TCC2 farão uso de alguns elementos da metodologia ágil na sua construção e alguns elementos da metodologia tradicional, de acordo com a necessidade. As duas metodologias serão adaptadas ao contexto do trabalho, afim de criar um modelo com uma melhor aderecência ao projeto como um todo. Uma abordagem híbrida permite escolher entre as duas metodologias as melhores práticas de acordo com o contexto. Ambas as metodologias são customizáveis, uma abordagem personalidaza pode acarretar em um produto de melhor qualidade e com os requisitos corretos.
+
+\newpage
+
+\section {Compreender o problema}
+
+A compreensão do problema foi realizada durante o levantamento do referencial teórico e o desenvolvimento da proposta, no capítulo anterior, para um melhor entendimento, foram utilizadas duas ferramentas de compreensão, o framework do problema, representado com a tabela (\ref{tab02}) e a sentença de posição do produto, representado na tabela (\ref{tab03}).
+
+
+\begin{table}[!htpb]
+\centering
+\begin{tabular}{|c|p{6cm}|p{12cm}|} \hline
+
+ O problema de & Criar projetos de gamificação\\ \hline
+
+ Afeta & Aos interessados em fazer uso da gamificação \\ \hline
+
+ Cujo impacto é & Restringir gamificação a poucas pessoas \\ \hline
+
+ Uma boa solução seria & Criar um produto que oferece a possibilidade de aproximação à gamificação \\ \hline
+
+\end{tabular}
+\caption{Framework do problema\label{tab02}
+}
+\end{table} 
+
+
+A tabela (\ref{tab02}) é uma descrição do problema e reflete o que se pretende solucionar, os usuários impactados e propõe uma solução. Foi utilizada para uma melhor compreensão do trabalho em desenvolvimento e se ele é mesmo uma proposta coerente.
+
+\begin{table}[!htpb]
+\centering
+\begin{tabular}{|c|p{6cm}|p{15cm}|} \hline
+
+ Para  & Pessoas com interesse em modificar algum aspecto no seu cotidiano \\ \hline
+
+ Que & Desejam utilizar gamificação para que as modificações ocorram \\ \hline
+
+ O  & (nome da ferramenta) \\ \hline
+
+ Que & Proporciona a criação de projetos de gamificação \\ \hline
+
+ Ao contrário  & das soluções que exigem conhecimento profundo sobre o tema para se criar um projeto \\ \hline
+
+ Nosso Produto & permite a criação de projetos de gamificação inclusive por pessoas não especialistas no assunto. \\ \hline
+
+\end{tabular}
+\caption{Sentença de posição do produto\label{tab03}
+}
+\end{table} 
+
+
+A sentença de posição do produto, tabela (\ref{tab03}), foi utilizada pra detalhar melhor o produto a ser desenvolvido.
+
+\newpage
+
+\section {Planejar Solução}
+
+
+Para a construção da base de conhecimento será utilizado o Attribute-Logic Engine (ALE), no ALE cada estrutura representa um tipo e os tipos são organizados em hierarquia, onde as características de um tipo são herdadas pelos subtipos, o ALE é um sistema de representação e análise léxica, é um compilador de gramáticas que utiliza Prolog. O ALE será utilizado para montar a ontologia por trás da ferramenta, fará o raciocínio fazendo uso dos atributos.
+
+A plataforma web será desenvolvida utilizando o paradigma orientado a objetos e arquitetura Model View Controller, em conjunto com o ALE, as linguagens cadidatas para o desenvolvimento da plataforma web são Ruby com o Framework Rails e Python, com o framework Django.
+
+O versionamento do código será feita através do git, o banco de dados será o mysql e a ferramenta de análise de qualidade de código será definida juntamente com a definição da linguagem de desenvolvimento, para o gerenciamento das sprints será utilizada o waffle.io, onde ficará disposto o backlog do produto e o backlog da sprint, integrado ao repositório do git, onde as histórias serão divididas em tarefas e gerarão issues no github.
+
+No planejamento foi alocado tempo, para o desenvolvimento do TCC1 e TCC2. Foi elaborado o cronograma representado na tabela (\ref{t_cronograma}) com as atividades realizadas no TCC1 e a tabela (\ref{t_cronograma2}) com a proposta de trabalho para o TCC2, os requisitos foram definidos e serão priorizados de acordo com a metodologia a ser utilizada.
+
+\begin{table}[!htpb]
+\centering
+
+% definindo o tamanho da fonte para small
+% outros possíveis tamanhos: footnotesize, scriptsize
+\begin{small} 
+  
+% redefinindo o espaçamento das colunas
+\setlength{\tabcolsep}{3pt} 
+
+% \cline é semelhante ao \hline, porém é possível indicar as colunas que terão essa a linha horizontal
+% \multicolumn{10}{c|}{Meses} indica que dez colunas serão mescladas e a palavra Meses estará centralizada dentro delas.
+
+\begin{tabular}{|c|c|c|c|c|}\hline
+ & \multicolumn{4}{c|}{Período}\\ \cline{2-5}
+\raisebox{1.5ex}{Etapa} & 15/02 à 22/02 & 01/03 a 31/03 & 04/04 à 22/05 & 16/05 à 15/06 \\ \hline
+
+Apontar Tema & X & & & \\ \hline
+Levantar Referencial Teórico & & X & & \\ \hline
+Definir Metodologias & & X & & \\ \hline
+Pré Projeto & & & X & \\ \hline
+Mapeamento das Técnicas & & & X &  \\ \hline
+Seleção dos atributos & & & X & \\ \hline
+Escrita do TCC & & & & X \\ \hline
+
+\end{tabular} 
+\end{small}
+\caption{Cronograma das atividades executadas no TCC1\label{t_cronograma}
+}
+\end{table} 
+
+\begin{itemize}
+\item  \textbf {Apontar Tema:} Definir entre as propostas de temas qual seria escolhido,  definir qual a área e problema a ser atacado, definir qual a proposta, nesta fase foi feito o entendimento inicial do problema e parte do planejamento do projeto como um todo.
+\item  \textbf {Levantar Referencial Teórico:} Após o apontamento do tema foram definidos os referênciais teóricos e iniciou-se a busca por material relevante sobre o problema a ser solucionado.
+\item  \textbf {Definir Metodologias} Definir metodologias utilizada na construção do TCC.
+\item  \textbf {Mapeamento das Técnicas de Gamificação:} Levantamento das técnicas de gamificação que compões o octalysis.
+\item  \textbf {Seleção dos indicadores serão a composição das técnicas:} Definição de como seria a estrutura interna da técnica, seleção e valoração dos atributos.
+\item  \textbf{Escrita do TCC:} Escrita e formatação dos capítulos do TCC.
+\end{itemize}
+
+
+
+Para o desenvolvimento da ferramenta a metodologia ágil será utilizada fazendo uso de alguns elementos do SCRUM, tais como kanban, backlog de produto, backlog de sprint, sprints, histórias de usuário e roadmap, a metologia tradicional foi utilizada a princípio para  obter um melhor entendimento do problema, através das tabela (\ref{tab02}) e  tabela (\ref{tab03}) e  as práticas definidas por \cite{pressman2009engenharia}. Após o entendimento do problema os requisitos foram levantados e representados em histórias de usuário que irão compor o backlog do produto e o backlog das sprints, novas histórias podem surgir no decorrer do desenvolvimento do trabalho e serão alocadas de acordo com a prioridade de cada uma, assim como riscos também serão adicionados ao projeto. Todas as histórias serão pontuadas, para ser possível ter uma visibilidade da dificuldade atrelada a história e do empenho necessário para concluí-la. 
+
+
+\begin{table}[!htpb]
+\centering
+
+% definindo o tamanho da fonte para small
+% outros possíveis tamanhos: footnotesize, scriptsize
+\begin{small} 
+  
+% redefinindo o espaçamento das colunas
+\setlength{\tabcolsep}{3pt} 
+
+% \cline é semelhante ao \hline, porém é possível indicar as colunas que terão essa a linha horizontal
+% \multicolumn{10}{c|}{Meses} indica que dez colunas serão mescladas e a palavra Meses estará centralizada dentro delas.
+
+\begin{tabular}{|c|c|c|c|c|c|}\hline
+ & \multicolumn{5}{c|}{Sprints}\\ \cline{2-6}
+\raisebox{1.5ex}{Atividades} & 01/08 a 07/08 & 08/08 a 21/08 & 22/08 a 04/09 & 5/09 a 18/09& 19/09 a 03/10 \\ 
+ & Sprint 0 & Sprint I & Sprint II & Sprint III & Sprint IV \\ \hline
+
+Definição das tecnologias & X & & & & \\ \hline
+Pontuação das histórias & X & & & & \\ \hline
+Priorização das histórias & X & & & & \\ \hline
+Montar Roadmap & X & & & & \\ \hline
+Montar backlog do produto & X & & & &\\ \hline
+Desenvolvimento do sistema & & X & X & X & X \\ \hline
+Coleta de Feedback de usuário & & X & X & X & X \\ \hline
+Escrita do TCC2 & & & & & X \\ \hline
+
+
+\end{tabular} 
+\end{small}
+\caption{Cronograma das atividades propostas para o TCC2\label{t_cronograma2}
+}
+\end{table} 
+
+\begin{itemize}
+\item  \textbf {Definição das tecnologias:} Definir entre as tecnologias candidatas quais serão utilizadas;
+\item  \textbf {Pontuação das histórias:} Pontuar histórias;
+\item  \textbf {Priorização das histórias:} Priorizar histórias com os interessados;
+\item  \textbf {Montar Roadmap:} Montar roadmap com as histórias priorizadas.
+\item  \textbf {Montar backlog do produto:} Inserir no Kanban as histórias de usuário.
+\item  \textbf{Desenvolvimento do sistema:} Codificar e testar histórias de usuário.
+\item  \textbf{Coleta de Feedback de usuário:} Coletar feedback sobre a usabilidade do sistema e realizar as modificações pertinentes.
+\item  \textbf{Escrita do TCC2:} Escrita e formatação dos capítulos do TCC2.
+\end{itemize}
+
+\section {Executar Solução}
+
+
+A execução da solução se dará durante o TCC2, quando as sprints estarão sendo executadas. Cada sprint terá duração de duas semanas, com exceção da sprint 0, dedicada a formação do backlog do produto, que terá duração de uma semana. As histórias serão pontuadas, receberão critérios de aceitação e serão testadas, aumentado a confiabilidade do produto. No fim de cada sprint haverá uma avaliação do produto no quesito usabilidade, qual o teste de usabilidade e como será utilizado ainda será definido. Os requisitos serão testados através de testes de aceitação e a codificação através de testes de unidade.
+
+\section {Examinar Resultado}
+
+A validação e a verificação será feita a cada sprint, quando o resultado do produto desenvolvido na mesma for avaliado, para garatir que as restrições de qualidade e confiabilidade estarão sendo respeitadas. 
+
+
+
+
+\chapter[Considerações finais]{CONSIDERAÇÕES FINAIS}
+
+
+A vida é muito curta para se desperdiçar o tempo jogando jogos ruins \cite{chou2015actionable}. 
