@@ -1,17 +1,23 @@
 
-\chapter[Engenharia de software]{ENGENHARIA DE SOFTWARE}
+\chapter[Desenvolvimento da Proposta]{DESENVOLVIMENTO DA PROPOSTA}
 
-Segundo \cite{sommerville2003engenharia} , a  engenharia de software é um ramo da engenharia cujo foco é o desenvolvimento dentro de custos adequados de sistemas de software. Ela está relacionada a todos os aspectos de produção de software, desde os estágio siniciais de especificação até sua manutenção, depois de entrar em operação. \cite{pressman2009engenharia} explica a engenharia como a aplicação de uma abordagem sistemática, disciplinada e quantificável no desenvolvimento, na operação e na manutenção de software.Este capítulo trata dos aspectos pertinentes a engenharia de software presente neste trabalho e está estruturado de acordo com as práticas da engenharia de software sugerida por \cite{pressman2009engenharia}, explicadas abaixo:
+
+
+Segundo \cite{sommerville2003engenharia} , a  engenharia de \textit{software} é um ramo da engenharia cujo foco é o desenvolvimento dentro de custos adequados de sistemas de software. Ela está relacionada a todos os aspectos de produção de \textit{software}, desde os estágio iniciais de especificação até sua manutenção, depois de entrar em operação. 
+
+\cite{pressman2009engenharia} explica a engenharia como a aplicação de uma abordagem sistemática, disciplinada e quantificável no desenvolvimento, na operação e na manutenção de software.
+
+Este capítulo trata dos aspectos pertinentes a engenharia de software presente neste trabalho e está estruturado de acordo com as práticas da engenharia de \textit{software} sugerida por \cite{pressman2009engenharia}, explicadas abaixo:
 
 \begin{itemize}
 \item  \textbf {Compreender o problema:} Definir interessados na solução do problema, dados, funções e recursos necessários, analisar se é possível representar o problema em problemas menores.
 \item  \textbf {Planejar Solução:} Procurar problemas similares, analisar se é possível representar a solução de maneira que produza uma implementação efetiva. 
-\item  \textbf {Executar Solução:} Analisar se a solução se adequa ao plano, verificar se cada uma das partes da solução está provavelmente correta, 
+\item  \textbf {Executar Solução:} Analisar se a solução é adequada ao plano, verificar se cada uma das partes da solução está provavelmente correta. 
 \item  \textbf {Examinar Resultado:} Analisar se o software foi validado em relação a todas as solicitações do interessados e se a solução se adequa ao plano.
 \end{itemize}
 
 
- Os processos de software são complexos e, como todos os processos intelectuais e criativos, dependem do julgamento humano \cite{sommerville2003engenharia}. Tendo essa complexidade em vista, para alinhar as práticas de engenharia de software com o desenvolvimento do trabalho foi realizada uma adaptação das  mesmas. O TCC1 e o TCC2 farão uso de alguns elementos da metodologia ágil na sua construção e alguns elementos da metodologia tradicional, de acordo com a necessidade. As duas metodologias serão adaptadas ao contexto do trabalho, afim de criar um modelo com uma melhor aderecência ao projeto como um todo. Uma abordagem híbrida permite escolher entre as duas metodologias as melhores práticas de acordo com o contexto. Ambas as metodologias são customizáveis, uma abordagem personalidaza pode acarretar em um produto de melhor qualidade e com os requisitos corretos.
+ Os processos de software são complexos e, como todos os processos intelectuais e criativos, dependem do julgamento humano \cite{sommerville2003engenharia}. Tendo essa complexidade em vista, para alinhar as práticas de engenharia de software com o desenvolvimento do trabalho foi realizada uma adaptação das  mesmas. O TCC1 e o TCC2 farão uso de alguns elementos da metodologia ágil na sua construção e alguns elementos da metodologia tradicional, de acordo com a necessidade. As duas metodologias serão adaptadas ao contexto do trabalho, afim de criar um modelo com uma melhor aderência ao projeto como um todo. Uma abordagem híbrida permite escolher entre as duas metodologias as melhores práticas de acordo com o contexto. Ambas as metodologias são customizáveis, uma abordagem personalizada pode acarretar em um produto de melhor qualidade e com os requisitos corretos.
 
 \newpage
 
@@ -69,11 +75,9 @@ A sentença de posição do produto, tabela (\ref{tab03}), foi utilizada pra det
 \section {Planejar Solução}
 
 
-Para a construção da base de conhecimento será utilizado o Attribute-Logic Engine (ALE), no ALE cada estrutura representa um tipo e os tipos são organizados em hierarquia, onde as características de um tipo são herdadas pelos subtipos, o ALE é um sistema de representação e análise léxica, é um compilador de gramáticas que utiliza Prolog. O ALE será utilizado para montar a ontologia por trás da ferramenta, fará o raciocínio fazendo uso dos atributos.
+A plataforma web será desenvolvida utilizando o paradigma orientado a objetos e arquitetura Model View Controller, as linguagens candidatas para o desenvolvimento da plataforma web são Ruby com o \textit{Framework} Rails e Python, com o \textit{framework} Django.
 
-A plataforma web será desenvolvida utilizando o paradigma orientado a objetos e arquitetura Model View Controller, em conjunto com o ALE, as linguagens cadidatas para o desenvolvimento da plataforma web são Ruby com o Framework Rails e Python, com o framework Django.
-
-O versionamento do código será feita através do git, o banco de dados será o mysql e a ferramenta de análise de qualidade de código será definida juntamente com a definição da linguagem de desenvolvimento, para o gerenciamento das sprints será utilizada o waffle.io, onde ficará disposto o backlog do produto e o backlog da sprint, integrado ao repositório do git, onde as histórias serão divididas em tarefas e gerarão issues no github.
+O versionamento do código será feita através do git, o banco de dados será o mysql e a ferramenta de análise de qualidade de código será definida juntamente com a definição da linguagem de desenvolvimento, para o gerenciamento das sprints será utilizada o waffle.io, onde ficará disposto o backlog do produto e o \textit{backlog} da \textit{sprint}, integrado ao repositório do git, onde as histórias serão divididas em tarefas e gerarão \textit{issues} no github.
 
 No planejamento foi alocado tempo, para o desenvolvimento do TCC1 e TCC2. Foi elaborado o cronograma representado na tabela (\ref{t_cronograma}) com as atividades realizadas no TCC1 e a tabela (\ref{t_cronograma2}) com a proposta de trabalho para o TCC2, os requisitos foram definidos e serão priorizados de acordo com a metodologia a ser utilizada.
 
@@ -119,8 +123,7 @@ Escrita do TCC & & & & X \\ \hline
 
 
 
-Para o desenvolvimento da ferramenta a metodologia ágil será utilizada fazendo uso de alguns elementos do SCRUM, tais como kanban, backlog de produto, backlog de sprint, sprints, histórias de usuário e roadmap, a metologia tradicional foi utilizada a princípio para  obter um melhor entendimento do problema, através das tabela (\ref{tab02}) e  tabela (\ref{tab03}) e  as práticas definidas por \cite{pressman2009engenharia}. Após o entendimento do problema os requisitos foram levantados e representados em histórias de usuário que irão compor o backlog do produto e o backlog das sprints, novas histórias podem surgir no decorrer do desenvolvimento do trabalho e serão alocadas de acordo com a prioridade de cada uma, assim como riscos também serão adicionados ao projeto. Todas as histórias serão pontuadas, para ser possível ter uma visibilidade da dificuldade atrelada a história e do empenho necessário para concluí-la. 
-
+Para o desenvolvimento da ferramenta a metodologia ágil será utilizada fazendo uso de alguns elementos do SCRUM, tais como kanban, \textit{backlog} de produto, \textit{backlog} de \textit{sprint}, \textit{sprints}, histórias de usuário e \textit{roadmap}, a metologia tradicional foi utilizada a princípio para  obter um melhor entendimento do problema, através das tabela (\ref{tab02}) e  tabela (\ref{tab03}) e  as práticas definidas por \cite{pressman2009engenharia}. Após o entendimento do problema os requisitos foram levantados e representados em histórias de usuário que irão compor o backlog do produto e o \textit{backlog} das \textit{sprints}, novas histórias podem surgir no decorrer do desenvolvimento do trabalho e serão alocadas de acordo com a prioridade de cada uma, assim como riscos também serão adicionados ao projeto. 
 
 \begin{table}[!htpb]
 \centering
@@ -136,17 +139,18 @@ Para o desenvolvimento da ferramenta a metodologia ágil será utilizada fazendo
 % \multicolumn{10}{c|}{Meses} indica que dez colunas serão mescladas e a palavra Meses estará centralizada dentro delas.
 
 \begin{tabular}{|c|c|c|c|c|c|}\hline
- & \multicolumn{5}{c|}{Sprints}\\ \cline{2-6}
-\raisebox{1.5ex}{Atividades} & 01/08 a 07/08 & 08/08 a 21/08 & 22/08 a 04/09 & 5/09 a 18/09& 19/09 a 03/10 \\ 
- & Sprint 0 & Sprint I & Sprint II & Sprint III & Sprint IV \\ \hline
+ & \multicolumn{5}{c|}{Meses}\\ \cline{2-6}
+\raisebox{1.5ex}{Atividades} & Julho & Agosto & Setembro & Outubro & Novembro \\  \hline
 
+Estudo Prévio & X & & & & \\ \hline
 Definição das tecnologias & X & & & & \\ \hline
 Pontuação das histórias & X & & & & \\ \hline
 Priorização das histórias & X & & & & \\ \hline
 Montar Roadmap & X & & & & \\ \hline
 Montar backlog do produto & X & & & &\\ \hline
 Desenvolvimento do sistema & & X & X & X & X \\ \hline
-Coleta de Feedback de usuário & & X & X & X & X \\ \hline
+Desenvolvimento do sistema & & X & X & X & X \\ \hline
+Desenvolvimento do sistema & & X & X & X & X \\ \hline
 Escrita do TCC2 & & & & & X \\ \hline
 
 
@@ -157,29 +161,200 @@ Escrita do TCC2 & & & & & X \\ \hline
 \end{table} 
 
 \begin{itemize}
+\item  \textbf {Estudo Prévio:}Estudar tecnologias candidatas;
 \item  \textbf {Definição das tecnologias:} Definir entre as tecnologias candidatas quais serão utilizadas;
 \item  \textbf {Pontuação das histórias:} Pontuar histórias;
 \item  \textbf {Priorização das histórias:} Priorizar histórias com os interessados;
-\item  \textbf {Montar Roadmap:} Montar roadmap com as histórias priorizadas.
-\item  \textbf {Montar backlog do produto:} Inserir no Kanban as histórias de usuário.
-\item  \textbf{Desenvolvimento do sistema:} Codificar e testar histórias de usuário.
-\item  \textbf{Coleta de Feedback de usuário:} Coletar feedback sobre a usabilidade do sistema e realizar as modificações pertinentes.
+\item  \textbf {Montar \textit{Roadmap}:} Montar \textit{roadmap} com as histórias priorizadas.
+\item  \textbf {Montar \textit{backlog} do produto:} Inserir no Kanban as histórias de usuário.
+\item  \textbf{Desenvolvimento do sistema:} Codificar histórias de usuário.
 \item  \textbf{Escrita do TCC2:} Escrita e formatação dos capítulos do TCC2.
 \end{itemize}
 
 \section {Executar Solução}
 
+A execução do processo de desenvolvimento ocorreu de acordo com o cronograma apresentado na tabela (\ref{tab03}). As histórias presentes da  tabela tabela (\ref{tab01}) foram reescritas em forma de tarefas, priorizadas e adicionadas ao Kanban, formando o backlog do produto. 
 
-A execução da solução se dará durante o TCC2, quando as sprints estarão sendo executadas. Cada sprint terá duração de duas semanas, com exceção da sprint 0, dedicada a formação do backlog do produto, que terá duração de uma semana. As histórias serão pontuadas, receberão critérios de aceitação e serão testadas, aumentado a confiabilidade do produto. No fim de cada sprint haverá uma avaliação do produto no quesito usabilidade, qual o teste de usabilidade e como será utilizado ainda será definido. Os requisitos serão testados através de testes de aceitação e a codificação através de testes de unidade.
+Inicialmente doze histórias foram planejadas, oito histórias foram completadas.
+Esta seção está estruturada da seguinte maneira, a subseção 1 é diz respeito ao ferramental técnologico, onde é feita uma explicação breve sobre as tecnologias utilizadas e a subseção 2, desenvolvimento, é descrito o processo de desenvolvimento da ferramenta Gamifier, a subseção 3 contém os resultados.  
 
-\section {Examinar Resultado}
+\subsection {Ferramental tecnológico}
 
-A validação e a verificação será feita a cada sprint, quando o resultado do produto desenvolvido na mesma for avaliado, para garatir que as restrições de qualidade e confiabilidade estarão sendo respeitadas. 
+A solução foi desenvolvida em python utilizando o microframework \textit{Flask}. Segundo a documentação da ferramenta, \textit{Flask} é um \textit{microframework} para Python baseado em Werkzeug, Jinja2 e boas inteções, licenciado em BSD \cite{flask}. 
+
+O Flask faz uso de duas bibliotecas externas, o \textit{Werkzeug}, que é uma biblioteca de utilitários WSGI para Python \cite{werkzeug} e \textit{Jinja}, mais especificamente \textit{Jinja2}, que é um mecanismo de modelo com todos os recursos para o Python \cite{jinja2}. As bibliotecas externas também são licenciadas via BSD.
+
+Para construção da ferramenta também foram utilizados Bootstrap, \textit{framewok} de CSS e HTML e o banco de dados o PostgreSQL associado ao \textit{toolkit} SQLAlchemy. A modelagem de dados para a construção da ferramenta pode ser vista na Fig.(\ref{fig06}):
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[keepaspectratio=true,scale=0.4]{figuras/gamifierdados.png}
+	\caption{Modelo de dados do Gamifier.\label{fig06}}
+\end{figure}
+
+O banco contém atualmente treze tabelas, sendo que cinco delas são oriundas de relacionamentos n para n, o restante são as entidades que espelham as classes modelos da aplicação. 
+As entidades principais do modelo são:
+
+\begin{itemize}
+\item  \textbf \textit{User:} Representa o usuário final da aplicação;
+\item  \textbf \textit{Core drive:} Representa as motivações básicas do framework octalysis;
+\item  \textbf \textit{Gamification project:} Representata os projetos de gamificação criados na ferramenta;
+\item  \textbf \textit{Attribute:} Represeta os atributos selecionados para extender o octalysis;
+\item  \textbf \textit{Gamification technique} Representa as técnicas de gamificação.
+\item  \textbf \textit{Gamification type:} Representa o tipo de gamificação criado.
+\end{itemize}
+
+Os dados iniciais utilizados para a contrução da ferramenta são de extrema importância para o correto funcionamento da mesma. Sendo assim foram retirados da literatura, como no caso das motivações básicas, técnicas de gamificação e atributos. Com um cuidado extra para a coleta das técnicas de gamificação, todas as técnicas presentes na aplicação foram extraídas do Funifier. A Fig.(\ref{fig07}) representa a tabela que contém as oito motivações básicas.
+
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[keepaspectratio=true,scale=0.5]{figuras/mb.png}
+	\caption{Exemplo de tabela presente na aplicação.\label{fig07}}
+\end{figure}
 
 
 
+\begin{figure}[h]
+	\centering
+		\includegraphics[keepaspectratio=true,scale=0.8]{figuras/MVC.png}
+	\caption{Arquitetura MVC.\label{fig08}}
+\end{figure}
 
-\chapter[Considerações finais]{CONSIDERAÇÕES FINAIS}
+O modelo arquitetural seguido para a construção da ferramenta foi o MVC. Segundo \cite{macoratti2009padroes} a abordagem da aquitetura MVC é composta por três objetos, o modelo, a visão e o controlador. O modelo é o objeto de aplicação, a visão é a apresentação da tela e o controlador é a maneira que define como a interface irá reagir as entradas do usuário.
+
+ A  Fig.(\ref{fig08}) representa o MVC utilizado no projeto com a adição do usuário final. As setas representam a comunicação entre os módulos.\newpage
+O banco de dados (\textit{database}) presente na figura representa o PostgreSQL e o SQLAlchemy. As modelos (\textit{Model}) e as controladoras (\textit{Controller}) foram contruídas em Python. A visão (\textit{View}) foi desenvolvida utilizando Jinja2 associada ao Bootstrap.
+
+Diversos outros componentes foram necessários para dar vida ao Gamifier, desde de bibliotecas que foram importadas até máquinas virtuais e ferramentas de versionamento, as mais importantes foram destacadas nesta seção. 
+
+\subsection {Desenvolvimento}
+
+\subsubsection {Codificação}
+
+O desenvolvimento iniciou-se com a construção das modelos e a criação do banco de dados, um exemplo das modelos podem ser visto na Fig.(\ref{fig09}). 
 
 
-A vida é muito curta para se desperdiçar o tempo jogando jogos ruins \cite{chou2015actionable}. 
+\begin{figure}[h]
+	\centering
+		\includegraphics[keepaspectratio=true,scale=0.8]{figuras/modelo.png}
+	\caption{Exemplo de classes modelos e relacionamento entre elas.\label{fig09}}
+\end{figure}
+
+
+Com a criação das modelos, o CRUD de usuário e projeto foram as primeiras tarefas a serem iniciadas. A Fig.(\ref{fig09}) exemplifica a classe de usuário, a classe de papeis desses usuários e o relacionamento entre elas. 
+
+Na Fig.(\ref{fig09}) é possível notar ainda o relacionamento entre a classe \textit{User} e a classe \textit{GamificationProject} que corresponde aos projetos de gamificação. Cada usuário pode ter diversos projetos associados a si.
+
+
+O uso do \textit{toolkit} SQLAlchemy  permite que as classes modelos criadas em Python gerem as entidades do banco de dados, sem que seja necessário a criação de um \textit{script} para tal. Os relacionamentos presentes na figura também são gerados de forma automática pelo \textit{toolkit}, que os reconhece e os insere corretamente de acordo com as peculiaridades de cada um.
+
+Após concluída a etapa de criação das classes modelos e organização da arquitetura a tela de criação de projetos de gamificação começou a tomar forma. 
+
+
+Com todas as técnicas e motivações básicas cadastradas no banco de dados era possível criar projetos de gamificação simples. A Fig.(\ref{fig10}) representa a tela de criação de projetos do Gamifier.
+
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[keepaspectratio=true,scale=0.4]{figuras/telainicial.png}
+	\caption{Tela de criação de projetos de gamificação.\label{fig10}}
+\end{figure}
+
+
+Cada círculo pequeno presente na Fig.(\ref{fig10}) representa uma técnica de gamificação, ao se passar o mouse em cada uma é possível obter informações sobre a mesma. Cria-se projetos de gamificação arrastando-se as técnicas desejadas pra dentro do \textit{container} ao centro, representado pelo caldeirão.
+
+As técnicas representadas possuem os atributos caracterizadores, quando um projeto de gamificação está sendo criado os atributos associados as técnicas já estão presentes. Ao se escolher uma técnica pra fazer parte do projeto, os atributos também são indiretamente escolhidos.
+
+O usuário pode arrastar e soltar técnicas de gamificação para fazer parte do projeto ou para deixar de fazer parte do projeto em qualquer momento da construção. 
+
+O conjunto de técnicas de gamificação selecionadas representam o projeto de gamificação, o usuário pode dar um nome e uma descrição para cada um dos seus projetos. Cada usuário tem a possibilidade de construir inúmeros projetos e editá-los sempre que sentir necessidade.\newpage
+
+Após finalizar a construção do projeto o usuário é direcionado para uma página com um \textit{feedback} do projeto que acabou de construir. A página é representada na Fig.(\ref{fig11}). 
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[keepaspectratio=true,scale=0.4]{figuras/detail.png}
+	\caption{Tela de \textit{feedback} de projetos de gamificação, motivações básicas.\label{fig11}}
+\end{figure}
+
+
+A página contém um gráfico que informa a porcentagem de cada motivação básica presente no projeto criado e a descrição de cada uma delas. O exemplo da Fig.(\ref{fig11}) contém a mesma proporção de três motivações básicas, \textit{Epic Meaning and Calling}, \textit{Ownership and Possession} e \textit{Scarcity and Impatience}. 
+
+Caso o projeto construído se enquadre dentro de um dos quatro tipos de gamificação (\textit{White Hat}, \textit{Black Hat}, \textit{Left Brain} ou \textit{Right Brain}) destacados por \cite{chou2015actionable}  além da descrição de cada motivação básica o usuário também será informado sobre o tipo de gamificação que construiu.
+
+
+As motivações básicas não utilizadas pelo usuário são omitidas. O cálculo de porcentagem de presença no projeto também exclui as MBs não utilizadas. A apresentação de dados aos usuários é feita sempre de maneira dinâmica. 
+
+As requisições feitas ao banco de dados são as mínimas necessárias. Desta maneira todo o cálculo relacionado as técnicas e MBs é feito em tempo de execução utilizando \textit{javascript}. 
+
+A  Fig.(\ref{fig12}) representa um dos métodos utilizados para a realização deste cálculo.\newpage
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[keepaspectratio=true,scale=0.6]{figuras/cores.png}
+	\caption{Método de cálculo de porcentagem dos cores.\label{fig12}}
+\end{figure}
+
+Um dos cálculos realizados verifica se do total de motivações básicas utilizadas existem três motivações que representam mais que cinquenta porcento do projeto. Esse cálculo é feito assim que o usuário finaliza o projeto e o resultado influencia na seleção informações apresentadas na tela de \textit{feedback}. 
+
+A tela de \textit{feedback} do projeto apresenta também a porcentagem que cada atributo representa no projeto construído. Todas as MBs são compostas por técnicas. Quando  uma técnica é selecionada para fazer parte do projeto os seis atributos que a compõe também são. 
+
+Como dito anteriormente neste trabalho, os atributos recebem um valor que segue a escala de Likert, a escala utilizada varia de um a cinco.  Essa escala mensura o grau de pertencimento do atributo a técnica, quanto mais próximo de cinco o valor estiver, mais aquele atributo está presente na técnica e mais influência exerce sobre ela. 
+
+Todas as técnicas presentes na ferramenta Gamifier tiveram seus atributos valorados. Três pessoas que tinham conhecimento sobre o framework Octalysis e seus componentes valoraram individualmente os atributos de cada uma das técnicas.
+
+ O valor final que cada atributo associado a uma técnica recebeu corresponde a média entre os valores das três pessoas. O passo a passo realizado para efetuar essa valoração é ilustrado a seguir, na Fig. (\ref{fig12}).\newpage
+
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[keepaspectratio=true,scale=0.4]{figuras/fluxo.png}
+	\caption{Fluxo de valoração dos atributos.\label{fig12}}
+\end{figure}
+
+
+\begin{itemize}
+\item  \textbf {Selecionar Técnicas:} As técnicas de gamificação do Octalysis foram levantadas. O levantamento inicial foi feito nos livros e materiais do autor do \textit{framework} e consolidadas com o levantamento feito no Funifier.
+\item  \textbf {Atribuir Valores aos Atributos:} Cada um dos responsáveis pela valoração dos atributos deu nota individualmente para todos os atributos. 
+\item  \textbf {Calcular média:} A média dos três valores foi definida como falor final que cada atributo ;
+
+\end{itemize}
+
+Cada técnica possui os mesmos atributos, mas os atributos possuem valores diferentes de acordo com a técnica a qual pertecem. A tela de \textit{feedback} também apresenta o quão presente cada atributo está no projeto. 
+
+
+A Fig.(\ref{fig13}) apresenta o gráfico dos atributos caracterizadores das técnicas de gamificação. É possível ver no gráfico de exemplo que o atributo envolvimento com o trabalho é o mais significante no projeto de gamificação em questão. A socialização vem em segundo lugar, seguida de participação, atenção, domínio e persistência.	
+
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[keepaspectratio=true,scale=0.35]{figuras/atributos.png}
+	\caption{Tela de \textit{feedback} de projetos de gamificação, atributos..\label{fig13}}
+\end{figure}
+
+\newpage
+Os mesmos valores utilizados neste trabalho também foram empregados para a construção do artigo Metodologia para avaliação da gamificação em jogos, publicado no V Congresso Brasileiro de Informática na Educação (CBIE 2016). O cálculo para verificar a influência do atributo ao projeto no entanto, não é o mesmo utilizado no artigo, apesar de fazer uso dos mesmos dados.
+
+
+O cálculo de presença dos atributos é feito através de uma soma simples. Por exemplo, se um projeto contém vinte e duas técnicas o atributo envolvimento com o trabalho também aparece vinte e duas vezes, afinal ele está presente em todas elas. 
+
+Para cada técnica o atributo recebeu um valor e a soma desses valores representa a porcentagem de influência desse atributo ao projeto. Quanto mais alto o valor, mais influência. O método que realiza este cálculo por ser visto na Fig. (\ref{fig14}).
+
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[keepaspectratio=true,scale=0.6]{figuras/att.png}
+	\caption{Método de cálculo de porcentagem dos atributos.\label{fig14}}
+\end{figure}
+
+
+Para realizar o cálculo percorre-se o vetor de técnicas, mas apenas as técnicas presentes no projeto recém criado. Enquanto as técnicas são percorridas os valores dos atributos são somados. Um dicionário de atributos é criado, associando cada atributo com o valor total da sua soma.
+
+ O projeto é adicionado ao banco, com todas as motivações básicas, técnicas a tributos relacionados a ele. O dicionário é enviado para a camada de visão e é apresentado ao usuário na forma do gráfico visto na  Fig.(\ref{fig13}).
+
+
+No momento que o usuário finaliza o projeto e é redirecionado para a página de \textit{feedback} o projeto é salvo no banco de dados. Caso o usuário tenha interesse ele pode exportar o seu projeto em formato de tabela com a extensão CSV. A tabela exportada contém todas as MBs utilizadas no projeto, as técnicas, seus respectivos números, data de criação, nome e descrição do projeto. Uma tabela exemplo está presente no primeiro apendice deste trabalho.
+
+Caso o usuário queira ter acesso ao conteúdo da página de \textit{feedback} após encerrar um projeto ele pode visualizar em forma de relatório ou gerar um aquivo com as informações do projeto com a extensão PDF. O usuário não pode modificar o resultado do projeto, caso ele queira fazer alguma alteração ele deverá alterar o projeto original e gerar um relatório a partir das modificações. Um exemplo do relatório gerado está contido no segundo apendice deste trabalho.
+
